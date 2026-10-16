@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171511">
+  <meta name="description" content="일인전승 신비문파의 머슴(?)제자 — 강호 인물 소개">
+  <title>일인전승 신비문파의 머슴(?)제자</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- 인물 데이터 수정 위치: characters.js -->
+  <script src="characters.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- 배경 이미지 교체 위치: assets/background.webp -->
+  <div class="site-background" aria-hidden="true"></div>
+
+  <main class="site-shell">
+    <header class="site-header">
+      <div class="title-frame">
+        <!-- 타이틀 이미지 교체 위치: assets/title.webp -->
+        <span class="title-placeholder" aria-hidden="true">
+          <span class="placeholder-kicker">江 湖 人 物 志</span>
+          <span class="placeholder-title">타이틀 이미지</span>
+          <span class="placeholder-file">assets/title.webp</span>
+        </span>
+        <img
+          class="title-image optional-image"
+          src="assets/title.webp"
+          alt="일인전승 신비문파의 머슴(?)제자"
+          data-placeholder=".title-placeholder"
+        >
+      </div>
+    </header>
+
+    <section class="characters-section" aria-labelledby="characters-heading">
+      <div class="section-heading">
+        <span class="section-kicker">人物錄</span>
+        <h1 id="characters-heading">강호의 인물들</h1>
+        <p>인물을 선택해 소개를 펼쳐 보세요.</p>
+      </div>
+
+      <!-- 카드 5개는 characters.js의 순서대로 생성됩니다.
+           PC 배치: 1·2 / 3·4·5. 모바일에서는 읽기 편한 2열로 재배치됩니다. -->
+      <div class="character-grid" id="character-grid" aria-label="등장인물 목록">
+        <noscript>인물 목록을 표시하려면 JavaScript를 활성화해 주세요.</noscript>
+      </div>
+    </section>
+
+    <section class="detail-section" id="character-detail" aria-labelledby="detail-name" aria-live="polite">
+      <div class="detail-ornament" aria-hidden="true"><span></span><b>✦</b><span></span></div>
+      <div class="detail-content" id="detail-content">
+        <p class="detail-kicker">人物小傳</p>
+        <h2 id="detail-name">인물을 선택하세요</h2>
+        <p class="detail-description" id="detail-description">위의 인물 카드를 클릭하면 이곳에 상세 소개가 표시됩니다.</p>
+      </div>
+      <p class="detail-empty-note" id="detail-empty-note">人物 · 門派 · 武學</p>
+    </section>
+
+    <footer class="site-footer">
+      <span>— 江湖路遠 —</span>
+    </footer>
+  </main>
+</body>
+</html>
